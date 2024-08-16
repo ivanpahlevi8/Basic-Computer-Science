@@ -54,5 +54,5 @@ def solution(graph, start, end):
 
 # Find and display the shortest path from F to D
 shortest_distance, shortest_path = solution(data, 'F', 'D')
-print(f"The shortest distance from F to D is {shortest_distance}")
-print(f"The shortest path from F to D is {shortest_path}")
+print(f"Shortest Num From F to D : {shortest_distance}")
+print(f"Shortest Path From F to D : {shortest_path}")
