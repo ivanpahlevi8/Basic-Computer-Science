@@ -11,7 +11,7 @@ data = {
     'G': {'D': 10, 'E': 7, 'F': 2.5},
 }
 
-def dijkstra(graph, start, end):
+def solution(graph, start, end):
     # Priority queue to keep track of the node with the smallest distance
     queue = [(0, start)]
 
@@ -53,6 +53,6 @@ def dijkstra(graph, start, end):
     return distances[path[-1]], path  # Return the distance and the path
 
 # Find and display the shortest path from F to D
-shortest_distance, shortest_path = dijkstra(data, 'F', 'D')
+shortest_distance, shortest_path = solution(data, 'F', 'D')
 print(f"The shortest distance from F to D is {shortest_distance}")
 print(f"The shortest path from F to D is {shortest_path}")
